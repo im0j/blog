@@ -1,0 +1,72 @@
+baseURL: "https://im0j.github.io"
+languageCode: ko
+defaultContentLanguage: ko
+title: im0j.me
+theme: PaperMod
+
+canonifyURLs: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+languages:
+  ko:
+    languageName: "한국어"
+    weight: 10
+    menu:
+      main:
+        - name: 포스트
+          url: posts/
+          weight: 10
+        - name: 아카이브
+          url: archives/
+          weight: 20
+        - name: 검색
+          url: search/
+          weight: 30
+        - name: 태그
+          url: tags/
+          weight: 40
+  en:
+    languageName: "English"
+    weight: 20
+    profileMode:
+      enabled: true
+      title: "Hi there! 👋"
+      subtitle: Welcome to my blog.
+      buttons:
+        - name: About me
+          url: about/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  # description: "im0j.me"
+  # author: 임영준
+
+  ShowReadingTime: true
+
+  homeInfoParams:
+    Title: "안녕하세요! 👋"
+    Content: 제 블로그에 오신 것을 환영합니다.
+  socialIcons:
+    - name: github
+      url: 'https://github.com/im0j'
+    - name: twitter
+      url: 'https://twitter.com/im0j21'
+    - name: stackoverflow
+      url: 'https://stackoverflow.com/users/8516513/im0j'
+    - name: email
+      url: 'mailto:im.youngjun.21@gmail.com'
+  assets:
+    disableHLJS: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    style: monokailight
+    noClasses: false
